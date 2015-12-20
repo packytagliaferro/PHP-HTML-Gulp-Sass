@@ -1,0 +1,53 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background: color(body-background);
+    color: color(text);
+    font-size: em($base__font-size);
+    font-family: $font-family--primary;
+    line-height: $base__line / $base__font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--ultra-bold;
+    line-height: $base__line / $base__font-size;
+}
+
+p {
+    font-family: $font-family--primary;
+}
+
+a {
+    border: 0;
+    color: inherit;
+    text-decoration: none;
+    transition: color .8s ease-out;
+    .wrap-content &,
+    .menu-inline & {
+        color: color(link);
+    }
+    .wrap-sidebar & {
+        color: color(link-muted);
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

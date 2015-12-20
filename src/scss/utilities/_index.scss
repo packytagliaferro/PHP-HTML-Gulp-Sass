@@ -1,0 +1,41 @@
+// ==========================================================================
+// Utilities Loader
+// ==========================================================================
+
+// Load any Sass dependencies at the top of this file (e.g. if you use Bourbon or some other framework)
+// Note: `bower_components` is already in Sass's path
+
+//Debug the grid. Remove before deploy
+
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+//Set the Neat Grid
+
+$column: 70px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1120px;
+
+//Bourbon
+@import "bourbon/app/assets/stylesheets/bourbon";
+
+//Neat
+@import "neat/app/assets/stylesheets/neat";
+
+// Scut, a Sass utilities library: https://davidtheclark.github.io/scut/
+@import "scut/dist/scut";
+
+// Configuration variables
+@import "config";
+
+// Functionså
+@import "utilities";
+
+// Mixins
+@import "mixins";
+
+// Helpers
+@import "helpers";

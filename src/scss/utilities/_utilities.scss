@@ -1,0 +1,22 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+//Import if Google Fonts URL is defined
+@if variable-exists(font-url--google) {
+    @import url($font-url--google);
+}
+
+// == LAYOUT == //
+
+// Margins and positioning helper function
+@function spacer($val: 1) {
+    @return $spacer * $val + 0px;
+}
+
+// == PALETTE == //
+
+// A simple function to retrieve a color from the array; adapted from http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+@function color($request) {
+    @return map-get($color, $request);
+}
